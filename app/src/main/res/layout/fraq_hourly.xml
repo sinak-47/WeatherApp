@@ -1,0 +1,1918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	android:gravity = "center"
+	android:orientation = "vertical">
+
+	<ScrollView
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent">
+
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:orientation = "vertical">
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly1_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly1_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly1_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly1_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly1_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly1_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly1_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly2_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly2_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly2_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly2_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly2_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly2_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly2_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly3_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly3_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly3_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly3_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly3_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly3_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly3_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly4_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly4_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly4_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly4_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly4_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly4_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly4_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly5_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly5_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly5_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly5_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly5_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly5_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly5_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly6_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly6_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly6_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly6_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly6_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly6_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly6_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly7_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly7_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly7_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly7_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly7_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly7_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly7_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly8_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly8_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly8_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly8_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly8_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly8_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly8_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly9_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly9_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly9_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly9_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly9_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly9_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly9_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly10_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly10_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly10_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly10_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly10_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly10_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly10_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly11_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly11_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly11_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly11_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly11_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly11_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly11_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly12_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly12_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly12_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly12_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly12_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly12_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly12_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly13_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly13_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly13_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly13_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly13_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly13_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly13_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly14_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly14_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly14_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly14_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly14_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly14_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly14_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly15_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly15_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly15_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly15_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly15_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly15_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly15_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly16_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly16_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly16_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly16_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly16_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly16_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly16_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly17_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly17_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly17_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly17_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly17_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly17_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly17_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly18_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly18_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly18_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly18_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly18_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly18_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly18_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly19_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly19_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly19_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly19_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly19_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly19_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly19_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly20_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly20_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly20_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly20_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly20_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly20_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly20_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly21_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly21_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly21_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly21_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly21_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly21_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly21_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly22_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly22_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly22_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly22_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly22_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly22_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly22_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly23_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly23_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly23_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly23_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly23_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly23_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly23_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "70sp"
+				android:background = "#32797979">
+
+				<ImageView
+					android:id = "@+id/hourly24_image1"
+					android:layout_width = "0dp"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:adjustViewBounds = "false"
+					android:cropToPadding = "false"
+					android:visibility = "visible"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintHorizontal_bias = "0.47"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.15"
+					app:srcCompat = "@mipmap/ic_snowy_round"/>
+
+				<TextView
+					android:id = "@+id/hourly24_temp"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:gravity = "center"
+					android:text = "22"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toEndOf = "@+id/hourly24_image1"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly24_time"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginStart = "8dp"
+					android:layout_marginTop = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "12pm"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintStart_toStartOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<TextView
+					android:id = "@+id/hourly24_humidity"
+					android:layout_width = "wrap_content"
+					android:layout_height = "match_parent"
+					android:layout_marginTop = "8dp"
+					android:layout_marginEnd = "8dp"
+					android:layout_marginBottom = "8dp"
+					android:gravity = "center"
+					android:text = "47%"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toEndOf = "parent"
+					app:layout_constraintTop_toTopOf = "parent"/>
+
+				<ImageView
+					android:id = "@+id/hourly24_image2"
+					android:layout_width = "0dp"
+					android:layout_height = "0dp"
+					android:layout_marginEnd = "8dp"
+					app:layout_constraintBottom_toBottomOf = "parent"
+					app:layout_constraintEnd_toStartOf = "@+id/hourly24_humidity"
+					app:layout_constraintHeight_percent = "0.3"
+					app:layout_constraintTop_toTopOf = "parent"
+					app:layout_constraintWidth_percent = "0.1"
+					app:srcCompat = "@mipmap/ic_humidity_round"/>
+			</android.support.constraint.ConstraintLayout>
+
+			<View
+				android:layout_width = "match_parent"
+				android:layout_height = "1dp"
+				android:background = "#64000000"/>
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>
