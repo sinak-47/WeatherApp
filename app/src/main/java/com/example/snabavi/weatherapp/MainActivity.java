@@ -1,10 +1,14 @@
 package com.example.snabavi.weatherapp;
 
+import android.content.Context;
+import android.provider.DocumentsContract;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -12,6 +16,8 @@ public class MainActivity extends AppCompatActivity
 	private TabLayout tabLayout;
 	private ViewPager viewPager;
 	private AppBarLayout appBarLayout;
+	private LinearLayout hourlyLinear;
+	private Context ROOT = this;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -22,6 +28,7 @@ public class MainActivity extends AppCompatActivity
 		viewPager = (ViewPager) findViewById(R.id.view_pager);
 		tabLayout = (TabLayout) findViewById(R.id.tab_changer);
 		appBarLayout =(AppBarLayout) findViewById(R.id.top_bar);
+		hourlyLinear = (LinearLayout) findViewById(R.id.hourly_linear);
 		
 		ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 		adapter.AddFragment(new Fraq_14D(),"14 DAYS");
@@ -30,5 +37,10 @@ public class MainActivity extends AppCompatActivity
 		
 		viewPager.setAdapter(adapter);
 		tabLayout.setupWithViewPager(viewPager);
+		
+		for (int i = 0; i <23; i++)
+		{
+		
+		}
 	}
 }
