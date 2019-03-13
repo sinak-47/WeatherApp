@@ -2,7 +2,7 @@ package com.example.snabavi.weatherapp;
 
 public class Weather
 {
-	String name;
+	String City;
 	int temp_24H[] = new int[4];
 	int state_24H[] = new int[4];
 	int rain_24H[] = new int[4];
@@ -14,4 +14,8 @@ public class Weather
 	int temp_14D[][] = new int[14][2];
 	int state_14D[] = new int[14];
 	int rain_14D[] = new int[14];
+	
+	int Time[] = new int[4];
+	String Hour[] = new String[24];
+	String Day[] = new String[14];
 }

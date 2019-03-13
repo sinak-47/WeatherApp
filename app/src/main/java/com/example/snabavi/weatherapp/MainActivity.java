@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity
 		appBarLayout = (AppBarLayout) findViewById(R.id.top_bar);
 		
 		ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-		adapter.AddFragment(new Fraq_14D(), "14 DAYS");
-		adapter.AddFragment(new Fraq_Hourly(), "HOURLY");
 		adapter.AddFragment(new Fraq_24H(), "24 HOURS");
+		adapter.AddFragment(new Fraq_Hourly(), "HOURLY");
+		adapter.AddFragment(new Fraq_14D(), "14 DAYS");
 		
 		viewPager.setAdapter(adapter);
 		tabLayout.setupWithViewPager(viewPager);
