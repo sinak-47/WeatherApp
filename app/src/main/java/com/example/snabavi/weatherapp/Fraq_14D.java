@@ -22,7 +22,7 @@ public class Fraq_14D extends Fragment
 	private Context ROOT;
 	private LinearLayout FRAQ_14D;
 	private ConstraintLayout.LayoutParams consLay_Params;
-	private ConstraintLayout.LayoutParams Text_Params[] = new ConstraintLayout.LayoutParams[4];
+	private ConstraintLayout.LayoutParams Text_Params[] = new ConstraintLayout.LayoutParams[5];
 	private LinearLayout.LayoutParams Linear_Params;
 	private ConstraintLayout.LayoutParams Weather_img_Params[] = new ConstraintLayout.LayoutParams[2];
 	private ConstraintLayout.LayoutParams Humidity_img_Params;
@@ -45,11 +45,11 @@ public class Fraq_14D extends Fragment
 				ConstraintLayout.LayoutParams.MATCH_PARENT,
 				(int) (MyTools.get_Screen_Height(ROOT) * 0.15));
 		
-		for (int i = 0; i < 4; i++)
+		for (int i = 0; i < 5; i++)
 		{
 			Text_Params[i] = new ConstraintLayout.LayoutParams(
 					ConstraintLayout.LayoutParams.WRAP_CONTENT,
-					ConstraintLayout.LayoutParams.MATCH_PARENT);
+					ConstraintLayout.LayoutParams.WRAP_CONTENT);
 			
 		}
 		
@@ -83,12 +83,12 @@ public class Fraq_14D extends Fragment
 	public void onResume()
 	{
 		FRAQ_14D = getView().findViewById(R.id.fraq_14D2);
-		create_hourly_layout();
+		create_hourly_layout(Weathers.get_weathers_list().get(0));
 		super.onResume();
 	}
 	
 	
-	private void create_hourly_layout()
+	private void create_hourly_layout(Weather weather)
 	{
 		FRAQ_14D.setOrientation(LinearLayout.HORIZONTAL);
 		ScrollView scrollView = new ScrollView(ROOT);
@@ -114,31 +114,31 @@ public class Fraq_14D extends Fragment
 			constraintLayout.setBackgroundColor(Color.parseColor("#64797979"));
 			
 			
-			TextView textView_time = new TextView(ROOT);
-			textView_time.setId(View.generateViewId());
-			textView_time.setText("Tuesday");
-			constraintLayout.addView(textView_time);
-			textView_time.setLayoutParams(Text_Params[0]);
-			textView_time.setGravity(Gravity.CENTER);
-			textView_time.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+			TextView textView_day = new TextView(ROOT);
+			textView_day.setId(View.generateViewId());
+			textView_day.setText(MyTools.get_Day((short) i));
+			constraintLayout.addView(textView_day);
+			textView_day.setLayoutParams(Text_Params[0]);
+			textView_day.setGravity(Gravity.CENTER);
+			textView_day.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
 			
 			ImageView imageView_weather[] = new ImageView[2];
 			imageView_weather[0] = new ImageView(ROOT);
 			imageView_weather[0].setId(View.generateViewId());
-			imageView_weather[0].setImageResource(R.mipmap.ic_snowy_round);
+			imageView_weather[0].setImageResource(MyTools.Convert_State(weather.getState_14D()[i][0]));
 			constraintLayout.addView(imageView_weather[0]);
 			imageView_weather[0].setLayoutParams(Weather_img_Params[0]);
 			
 			imageView_weather[1] = new ImageView(ROOT);
 			imageView_weather[1].setId(View.generateViewId());
-			imageView_weather[1].setImageResource(R.mipmap.ic_snowy_round);
+			imageView_weather[1].setImageResource(MyTools.Convert_State(weather.getState_14D()[i][1]));
 			constraintLayout.addView(imageView_weather[1]);
 			imageView_weather[1].setLayoutParams(Weather_img_Params[1]);
 			
 			TextView textView_temp[] = new TextView[2];
 			textView_temp[0] = new TextView(ROOT);
 			textView_temp[0].setId(View.generateViewId());
-			textView_temp[0].setText("68");
+			textView_temp[0].setText(String.valueOf(weather.getTemp_14D()[i][0]));
 			constraintLayout.addView(textView_temp[0]);
 			textView_temp[0].setLayoutParams(Text_Params[1]);
 			textView_temp[0].setGravity(Gravity.CENTER);
@@ -146,7 +146,7 @@ public class Fraq_14D extends Fragment
 			
 			textView_temp[1] = new TextView(ROOT);
 			textView_temp[1].setId(View.generateViewId());
-			textView_temp[1].setText("68");
+			textView_temp[1].setText(String.valueOf(weather.getTemp_14D()[i][1]));
 			constraintLayout.addView(textView_temp[1]);
 			textView_temp[1].setLayoutParams(Text_Params[3]);
 			textView_temp[1].setGravity(Gravity.CENTER);
@@ -154,28 +154,46 @@ public class Fraq_14D extends Fragment
 			
 			ImageView imageView_humidity = new ImageView(ROOT);
 			imageView_humidity.setId(View.generateViewId());
-			imageView_humidity.setImageResource(R.mipmap.ic_humidity_round);
+			imageView_humidity.setImageResource(R.mipmap.ic_humidity);
 			constraintLayout.addView(imageView_humidity);
 			imageView_humidity.setLayoutParams(Humidity_img_Params);
 			
 			TextView textView_humidity = new TextView(ROOT);
 			textView_humidity.setId(View.generateViewId());
-			textView_humidity.setText("47%");
+			textView_humidity.setText(String.valueOf(weather.getHumidity_14D()[i]));
 			constraintLayout.addView(textView_humidity);
 			textView_humidity.setLayoutParams(Text_Params[2]);
 			textView_humidity.setGravity(Gravity.CENTER);
 			textView_humidity.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
 			
+			TextView textView_date = new TextView(ROOT);
+			textView_date.setId(View.generateViewId());
+			textView_date.setText(MyTools.get_Date((short) i));
+			constraintLayout.addView(textView_date);
+			textView_date.setLayoutParams(Text_Params[4]);
+			textView_date.setGravity(Gravity.CENTER);
+			textView_date.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+			
 			
 			constraintSet.clone(constraintLayout);
 			
-			constraintSet.connect(textView_time.getId(), ConstraintSet.BOTTOM,
+			constraintSet.connect(textView_day.getId(), ConstraintSet.BOTTOM,
 								  constraintLayout.getId(), ConstraintSet.BOTTOM);
-			constraintSet.connect(textView_time.getId(), ConstraintSet.TOP,
+			constraintSet.connect(textView_day.getId(), ConstraintSet.TOP,
 								  constraintLayout.getId(), ConstraintSet.TOP);
-			constraintSet.connect(textView_time.getId(), ConstraintSet.START,
+			constraintSet.connect(textView_day.getId(), ConstraintSet.START,
 								  constraintLayout.getId(), ConstraintSet.START,
 								  (int) (MyTools.get_Screen_Width(ROOT)*0.03));
+			constraintSet.setVerticalBias(textView_day.getId(),(float) 0.3);
+			
+			constraintSet.connect(textView_date.getId(), ConstraintSet.BOTTOM,
+								  constraintLayout.getId(), ConstraintSet.BOTTOM);
+			constraintSet.connect(textView_date.getId(), ConstraintSet.TOP,
+								  constraintLayout.getId(), ConstraintSet.TOP);
+			constraintSet.connect(textView_date.getId(), ConstraintSet.END,
+								  textView_day.getId(), ConstraintSet.END,
+								  (int) (MyTools.get_Screen_Width(ROOT)*0.03));
+			constraintSet.setVerticalBias(textView_date.getId(),(float) 0.6);
 			
 			constraintSet.connect(imageView_weather[0].getId(), ConstraintSet.START,
 								  constraintLayout.getId(), ConstraintSet.START);
@@ -214,8 +232,6 @@ public class Fraq_14D extends Fragment
 			constraintSet.connect(textView_temp[1].getId(), ConstraintSet.START,
 								  imageView_weather[1].getId(), ConstraintSet.END,
 								  (int) (MyTools.get_Screen_Width(ROOT) * 0.02));
-
-//			humidity image view depends on humidity text view
 			
 			constraintSet.connect(textView_humidity.getId(), ConstraintSet.BOTTOM,
 								  constraintLayout.getId(), ConstraintSet.BOTTOM);

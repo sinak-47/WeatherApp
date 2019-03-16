@@ -32,7 +32,6 @@ public class Fraq_Hourly extends Fragment
 	private ConstraintSet constraintSet;
 	private LinearLayout.LayoutParams Bar_Params;
 	
-	
 	public Fraq_Hourly() {}
 	
 	@Nullable
@@ -78,12 +77,12 @@ public class Fraq_Hourly extends Fragment
 	public void onResume()
 	{
 		FRAQ_HOURLY = getView().findViewById(R.id.fraq_hourly2);
-		create_hourly_layout();
+		create_hourly_layout(Weathers.get_weathers_list().get(0));
 		super.onResume();
 	}
 	
 	
-	private void create_hourly_layout()
+	private void create_hourly_layout(Weather weather)
 	{
 		FRAQ_HOURLY.setOrientation(LinearLayout.HORIZONTAL);
 		ScrollView scrollView = new ScrollView(ROOT);
@@ -111,7 +110,7 @@ public class Fraq_Hourly extends Fragment
 			
 			TextView textView_time = new TextView(ROOT);
 			textView_time.setId(View.generateViewId());
-			textView_time.setText("4PM");
+			textView_time.setText(MyTools.Convert_Hour(weather.getHour()[i]));
 			constraintLayout.addView(textView_time);
 			textView_time.setLayoutParams(Text_Params[0]);
 			textView_time.setGravity(Gravity.CENTER);
@@ -119,13 +118,13 @@ public class Fraq_Hourly extends Fragment
 			
 			ImageView imageView_weather = new ImageView(ROOT);
 			imageView_weather.setId(View.generateViewId());
-			imageView_weather.setImageResource(R.mipmap.ic_snowy_round);
+			imageView_weather.setImageResource(MyTools.Convert_State(weather.getState_hourly()[i]));
 			constraintLayout.addView(imageView_weather);
 			imageView_weather.setLayoutParams(Weather_img_Params);
 			
 			TextView textView_temp = new TextView(ROOT);
 			textView_temp.setId(View.generateViewId());
-			textView_temp.setText("68");
+			textView_temp.setText(String.valueOf(weather.getTemp_hourly()[i]));
 			constraintLayout.addView(textView_temp);
 			textView_temp.setLayoutParams(Text_Params[1]);
 			textView_temp.setGravity(Gravity.CENTER);
@@ -133,13 +132,13 @@ public class Fraq_Hourly extends Fragment
 			
 			ImageView imageView_humidity = new ImageView(ROOT);
 			imageView_humidity.setId(View.generateViewId());
-			imageView_humidity.setImageResource(R.mipmap.ic_humidity_round);
+			imageView_humidity.setImageResource(R.mipmap.ic_humidity);
 			constraintLayout.addView(imageView_humidity);
 			imageView_humidity.setLayoutParams(Humidity_img_Params);
 			
 			TextView textView_humidity = new TextView(ROOT);
 			textView_humidity.setId(View.generateViewId());
-			textView_humidity.setText("47%");
+			textView_humidity.setText(MyTools.Convert_Humidity(weather.getHumidity_hourly()[i]));
 			constraintLayout.addView(textView_humidity);
 			textView_humidity.setLayoutParams(Text_Params[2]);
 			textView_humidity.setGravity(Gravity.CENTER);
@@ -154,15 +153,15 @@ public class Fraq_Hourly extends Fragment
 								  constraintLayout.getId(), ConstraintSet.TOP);
 			constraintSet.connect(textView_time.getId(), ConstraintSet.START,
 								  constraintLayout.getId(), ConstraintSet.START,
-								  (int) (MyTools.get_Screen_Width(ROOT)*0.03));
+								  (int) (MyTools.get_Screen_Width(ROOT) * 0.03));
 			constraintSet.setVerticalBias(textView_time.getId(), (float) 0.5);
 			constraintSet.setHorizontalBias(textView_time.getId(), (float) 0.5);
 			
 			constraintSet.connect(imageView_weather.getId(), ConstraintSet.START,
 								  constraintLayout.getId(), ConstraintSet.START);
 			constraintSet.connect(imageView_weather.getId(), ConstraintSet.END,
-								  constraintLayout.getId(), ConstraintSet.END ,
-								  (int) (MyTools.get_Screen_Width(ROOT)*0.08));
+								  constraintLayout.getId(), ConstraintSet.END,
+								  (int) (MyTools.get_Screen_Width(ROOT) * 0.08));
 			constraintSet.connect(imageView_weather.getId(), ConstraintSet.TOP,
 								  constraintLayout.getId(), ConstraintSet.TOP);
 			constraintSet.connect(imageView_weather.getId(), ConstraintSet.BOTTOM,
@@ -184,7 +183,7 @@ public class Fraq_Hourly extends Fragment
 								  constraintLayout.getId(), ConstraintSet.TOP);
 			constraintSet.connect(textView_humidity.getId(), ConstraintSet.END,
 								  constraintLayout.getId(), ConstraintSet.END,
-								  (int) (MyTools.get_Screen_Width(ROOT)*0.03));
+								  (int) (MyTools.get_Screen_Width(ROOT) * 0.03));
 			
 			constraintSet.connect(imageView_humidity.getId(), ConstraintSet.BOTTOM,
 								  constraintLayout.getId(), ConstraintSet.BOTTOM);
@@ -192,7 +191,7 @@ public class Fraq_Hourly extends Fragment
 								  constraintLayout.getId(), ConstraintSet.TOP);
 			constraintSet.connect(imageView_humidity.getId(), ConstraintSet.END,
 								  textView_humidity.getId(), ConstraintSet.START,
-								  (int) (MyTools.get_Screen_Width(ROOT)*0.02));
+								  (int) (MyTools.get_Screen_Width(ROOT) * 0.02));
 			
 			
 			constraintSet.applyTo(constraintLayout);

@@ -76,13 +76,13 @@ public class Fraq_24H extends Fragment
 	public void onResume()
 	{
 		FRAQ_24H = getView().findViewById(R.id.fraq_24H2);
-		create_hourly_layout();
+		create_hourly_layout(Weathers.get_weathers_list().get(0));
 		super.onResume();
 	}
 	
 	
 	
-	private void create_hourly_layout()
+	private void create_hourly_layout(Weather weather)
 	{
 		FRAQ_24H.setOrientation(LinearLayout.HORIZONTAL);
 		ScrollView scrollView = new ScrollView(ROOT);
@@ -110,7 +110,7 @@ public class Fraq_24H extends Fragment
 			
 			TextView textView_time = new TextView(ROOT);
 			textView_time.setId(View.generateViewId());
-			textView_time.setText("Afternoon");
+			textView_time.setText(MyTools.Convert_Time(weather.getTime()[i]));
 			constraintLayout.addView(textView_time);
 			textView_time.setLayoutParams(Text_Params[0]);
 			textView_time.setGravity(Gravity.CENTER);
@@ -118,13 +118,13 @@ public class Fraq_24H extends Fragment
 			
 			ImageView imageView_weather = new ImageView(ROOT);
 			imageView_weather.setId(View.generateViewId());
-			imageView_weather.setImageResource(R.mipmap.ic_snowy_round);
+			imageView_weather.setImageResource(MyTools.Convert_State(weather.getState_24H()[i]));
 			constraintLayout.addView(imageView_weather);
 			imageView_weather.setLayoutParams(Weather_img_Params);
 			
 			TextView textView_temp = new TextView(ROOT);
 			textView_temp.setId(View.generateViewId());
-			textView_temp.setText("68");
+			textView_temp.setText(String.valueOf(weather.getTemp_24H()[i]));
 			constraintLayout.addView(textView_temp);
 			textView_temp.setLayoutParams(Text_Params[1]);
 			textView_temp.setGravity(Gravity.CENTER);
@@ -132,13 +132,13 @@ public class Fraq_24H extends Fragment
 			
 			ImageView imageView_humidity = new ImageView(ROOT);
 			imageView_humidity.setId(View.generateViewId());
-			imageView_humidity.setImageResource(R.mipmap.ic_humidity_round);
+			imageView_humidity.setImageResource(R.mipmap.ic_humidity);
 			constraintLayout.addView(imageView_humidity);
 			imageView_humidity.setLayoutParams(Humidity_img_Params);
 			
 			TextView textView_humidity = new TextView(ROOT);
 			textView_humidity.setId(View.generateViewId());
-			textView_humidity.setText("47%");
+			textView_humidity.setText(String.valueOf(weather.getHumidity_24H()[i]));
 			constraintLayout.addView(textView_humidity);
 			textView_humidity.setLayoutParams(Text_Params[2]);
 			textView_humidity.setGravity(Gravity.CENTER);
@@ -172,8 +172,6 @@ public class Fraq_24H extends Fragment
 			constraintSet.connect(textView_temp.getId(), ConstraintSet.START,
 								  imageView_weather.getId(), ConstraintSet.END,
 								  (int) (MyTools.get_Screen_Width(ROOT) * 0.02));
-
-//			humidity image view depends on humidity text view
 			
 			constraintSet.connect(textView_humidity.getId(), ConstraintSet.BOTTOM,
 								  constraintLayout.getId(), ConstraintSet.BOTTOM);
