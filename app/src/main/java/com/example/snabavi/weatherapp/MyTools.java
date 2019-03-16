@@ -94,19 +94,19 @@ public final class MyTools
 		switch (day)
 		{
 			case 0:
-				return "Saturday ";
+				return "Saturday";
 			case 1:
-				return "Sunday ";
+				return "Sunday";
 			case 2:
-				return "Monday ";
+				return "Monday";
 			case 3:
-				return "Tuesday ";
+				return "Tuesday";
 			case 4:
-				return "Wednesday ";
+				return "Wednesday";
 			case 5:
-				return "Thursday ";
+				return "Thursday";
 			case 6:
-				return "  Friday ";
+				return "  Friday";
 			default:
 				return null;
 		}
@@ -159,19 +159,19 @@ public final class MyTools
 	{
 		if (hour < 12)
 		{
-			return String.valueOf(hour) + " AM  ";
+			return String.valueOf(hour) + " AM";
 		}
 		else if (hour == 12)
 		{
-			return "12 PM  ";
+			return "12 PM";
 		}
 		else if (hour == 24)
 		{
-			return "12 AM  ";
+			return "12 AM";
 		}
 		else
 		{
-			return String.valueOf(hour - 12) + " PM  ";
+			return String.valueOf(hour - 12) + " PM";
 		}
 	}
 	

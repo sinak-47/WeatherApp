@@ -44,13 +44,17 @@ public class Fraq_24H extends Fragment
 				ConstraintLayout.LayoutParams.MATCH_PARENT,
 				(int) (MyTools.get_Screen_Height(ROOT) * 0.185));
 		
-		for (int i = 0; i < 3; i++)
-		{
-			Text_Params[i] = new ConstraintLayout.LayoutParams(
-					ConstraintLayout.LayoutParams.WRAP_CONTENT,
-					ConstraintLayout.LayoutParams.MATCH_PARENT);
-			
-		}
+		Text_Params[0] = new ConstraintLayout.LayoutParams(
+				(int) (MyTools.get_Screen_Width(ROOT)*0.15),
+				ConstraintLayout.LayoutParams.MATCH_PARENT);
+		
+		Text_Params[1] = new ConstraintLayout.LayoutParams(
+				(int) (MyTools.get_Screen_Width(ROOT)*0.05),
+				ConstraintLayout.LayoutParams.MATCH_PARENT);
+		
+		Text_Params[2] = new ConstraintLayout.LayoutParams(
+				(int) (MyTools.get_Screen_Width(ROOT)*0.08),
+				ConstraintLayout.LayoutParams.MATCH_PARENT);
 		
 		Linear_Params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
 													  ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -96,7 +100,7 @@ public class Fraq_24H extends Fragment
 		for (int i = 0; i < 4; i++)
 		{
 			View bar = new View(ROOT);
-			bar.setBackgroundColor(Color.parseColor("#64000000"));
+			bar.setBackgroundColor(Color.parseColor("#96000000"));
 			bar.setVisibility(View.VISIBLE);
 			bar.setLayoutParams(Bar_Params);
 			linearLayout.addView(bar);
@@ -105,7 +109,7 @@ public class Fraq_24H extends Fragment
 			constraintLayout.setLayoutParams(consLay_Params);
 			constraintLayout.setId(View.generateViewId());
 			constraintSet = new ConstraintSet();
-			constraintLayout.setBackgroundColor(Color.parseColor("#64797979"));
+			constraintLayout.setBackgroundColor(Color.parseColor("#96797979"));
 			
 			
 			TextView textView_time = new TextView(ROOT);
@@ -138,7 +142,7 @@ public class Fraq_24H extends Fragment
 			
 			TextView textView_humidity = new TextView(ROOT);
 			textView_humidity.setId(View.generateViewId());
-			textView_humidity.setText(String.valueOf(weather.getHumidity_24H()[i]));
+			textView_humidity.setText(MyTools.Convert_Humidity(weather.getHumidity_24H()[i]));
 			constraintLayout.addView(textView_humidity);
 			textView_humidity.setLayoutParams(Text_Params[2]);
 			textView_humidity.setGravity(Gravity.CENTER);

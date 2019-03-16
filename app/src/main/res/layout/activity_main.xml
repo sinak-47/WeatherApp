@@ -18,7 +18,7 @@
 		app:layout_constraintHeight_percent = "0.1"
 		app:layout_constraintStart_toStartOf = "parent"
 		app:layout_constraintTop_toTopOf = "parent"
-		android:background="#0f0000ff"/>
+		android:background="#9a1c1c68"/>
 
 	<View
 		android:id = "@+id/divider"
@@ -46,8 +46,9 @@
 		android:layout_height = "wrap_content"
 		android:gravity = "center"
 		android:text = "Tehran"
+		android:translationZ="10dp"
 		android:textColor="#ffffff"
-		android:textSize = "16sp"
+		android:textSize = "24sp"
 		android:visibility = "visible"
 		app:layout_constraintEnd_toEndOf = "@+id/top_bar"
 		app:layout_constraintStart_toStartOf = "parent"
@@ -64,12 +65,12 @@
 		app:layout_constraintHeight_percent = "0.1"
 		app:layout_constraintHorizontal_bias = "0.0"
 		app:layout_constraintStart_toStartOf = "parent"
-		android:background="#0f0000ff"
+		android:background="#9a1c1c68"
 		app:layout_constraintTop_toBottomOf = "@+id/top_bar"
 		app:tabGravity = "fill"
 		app:tabIndicatorColor = "#1aff00"
 		app:tabMode = "fixed"
-		app:tabTextColor = "#c8939393"
+		app:tabTextColor = "#939393"
 		app:tabSelectedTextColor="#ffffff"/>
 
 	<android.support.v4.view.ViewPager

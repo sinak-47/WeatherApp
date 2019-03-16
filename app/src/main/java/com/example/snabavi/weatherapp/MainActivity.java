@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity
 		viewPager = (ViewPager) findViewById(R.id.view_pager);
 		tabLayout = (TabLayout) findViewById(R.id.tab_changer);
 		appBarLayout = (AppBarLayout) findViewById(R.id.top_bar);
+		ConstraintLayout constraintLayout = findViewById(R.id.main_layout);
+		TextView textView = findViewById(R.id.textView);
+		textView.bringToFront();
 		
 		ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 		adapter.AddFragment(new Fraq_24H(), "24 HOURS");
@@ -44,11 +47,22 @@ public class MainActivity extends AppCompatActivity
 		viewPager.setAdapter(adapter);
 		tabLayout.setupWithViewPager(viewPager);
 		
-		if(Weathers.get_weathers_list().get(0).getTemp_hourly()[0]==0)
+		switch (Weathers.get_weathers_list().get(0).getTime()[0])
 		{
-			ConstraintLayout constraintLayout = findViewById(R.id.main_layout);
-			constraintLayout.setBackgroundResource(R.drawable.sun);
+			case 0:
+				constraintLayout.setBackgroundResource(R.drawable.sun);
+				break;
+			case 1:
+				constraintLayout.setBackgroundResource(R.drawable.snow);
+				break;
+			case 2:
+				constraintLayout.setBackgroundResource(R.drawable.rain);
+				break;
+			case 3:
+				constraintLayout.setBackgroundResource(R.drawable.cloud);
+				break;
 		}
+		
 		
 	}
 }

@@ -19,6 +19,22 @@ public class Weather
 			state_hourly[i] = (short) (i % 4);
 		}
 		
+		for (int i = 0; i <14; i++)
+		{
+			temp_14D[i][0]= (short) i;
+			temp_14D[i][1]= (short) (2*i);
+			humidity_14D[i] = (short) (i*5+1);
+			state_14D[i][0] = (short) ((i+1)%4);
+			state_14D[i][1] = (short) ((i+2)%4);
+		}
+		
+		for (int i = 0; i <4 ; i++)
+		{
+			temp_24H[i] = (short) (i*10);
+			humidity_24H[i] = (short) (i*20);
+			state_24H[i] = (short) ((i+3)%4);
+		}
+		
 		update_hour();
 		update_time();
 	}
@@ -97,13 +113,9 @@ public class Weather
 		return hour;
 	}
 	
-	public short[] getTime()
+	public short[] getTime()//need change!
 	{
-		if (time[0] != (short) (Short.valueOf(
-				new SimpleDateFormat("HH").format(Calendar.getInstance().getTime())) % 4))
-		{
-			update_time();
-		}
+		update_time();
 		return time;
 	}
 	

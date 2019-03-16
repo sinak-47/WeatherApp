@@ -45,13 +45,21 @@ public class Fraq_14D extends Fragment
 				ConstraintLayout.LayoutParams.MATCH_PARENT,
 				(int) (MyTools.get_Screen_Height(ROOT) * 0.15));
 		
-		for (int i = 0; i < 5; i++)
-		{
-			Text_Params[i] = new ConstraintLayout.LayoutParams(
-					ConstraintLayout.LayoutParams.WRAP_CONTENT,
-					ConstraintLayout.LayoutParams.WRAP_CONTENT);
-			
-		}
+		Text_Params[0] = new ConstraintLayout.LayoutParams(
+				(int) (MyTools.get_Screen_Width(ROOT)*0.15),
+				ConstraintLayout.LayoutParams.WRAP_CONTENT);
+		Text_Params[4] = new ConstraintLayout.LayoutParams(
+				(int) (MyTools.get_Screen_Width(ROOT)*0.15),
+				ConstraintLayout.LayoutParams.WRAP_CONTENT);
+		Text_Params[3] = new ConstraintLayout.LayoutParams(
+				(int) (MyTools.get_Screen_Width(ROOT)*0.05),
+				ConstraintLayout.LayoutParams.WRAP_CONTENT);
+		Text_Params[2] = new ConstraintLayout.LayoutParams(
+				(int) (MyTools.get_Screen_Width(ROOT)*0.08),
+				ConstraintLayout.LayoutParams.WRAP_CONTENT);
+		Text_Params[1] = new ConstraintLayout.LayoutParams(
+				(int) (MyTools.get_Screen_Width(ROOT)*0.05),
+				ConstraintLayout.LayoutParams.WRAP_CONTENT);
 		
 		Linear_Params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
 													  ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -60,11 +68,11 @@ public class Fraq_14D extends Fragment
 													  ViewGroup.LayoutParams.MATCH_PARENT);
 		
 		Weather_img_Params[0] = new ConstraintLayout.LayoutParams(
-				(int) (MyTools.get_Screen_Width(ROOT) * 0.1),
+				(int) (MyTools.get_Screen_Width(ROOT) * 0.13),
 				ConstraintLayout.LayoutParams.MATCH_PARENT);
 		
 		Weather_img_Params[1] = new ConstraintLayout.LayoutParams(
-				(int) (MyTools.get_Screen_Width(ROOT) * 0.1),
+				(int) (MyTools.get_Screen_Width(ROOT) * 0.13),
 				ConstraintLayout.LayoutParams.MATCH_PARENT);
 		
 		
@@ -102,7 +110,7 @@ public class Fraq_14D extends Fragment
 		for (int i = 0; i < 14; i++)
 		{
 			View bar = new View(ROOT);
-			bar.setBackgroundColor(Color.parseColor("#64000000"));
+			bar.setBackgroundColor(Color.parseColor("#96000000"));
 			bar.setVisibility(View.VISIBLE);
 			bar.setLayoutParams(Bar_Params);
 			linearLayout.addView(bar);
@@ -111,7 +119,7 @@ public class Fraq_14D extends Fragment
 			constraintLayout.setLayoutParams(consLay_Params);
 			constraintLayout.setId(View.generateViewId());
 			constraintSet = new ConstraintSet();
-			constraintLayout.setBackgroundColor(Color.parseColor("#64797979"));
+			constraintLayout.setBackgroundColor(Color.parseColor("#96797979"));
 			
 			
 			TextView textView_day = new TextView(ROOT);
@@ -119,8 +127,7 @@ public class Fraq_14D extends Fragment
 			textView_day.setText(MyTools.get_Day((short) i));
 			constraintLayout.addView(textView_day);
 			textView_day.setLayoutParams(Text_Params[0]);
-			textView_day.setGravity(Gravity.CENTER);
-			textView_day.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+			textView_day.setGravity(Gravity.LEFT);
 			
 			ImageView imageView_weather[] = new ImageView[2];
 			imageView_weather[0] = new ImageView(ROOT);
@@ -160,7 +167,7 @@ public class Fraq_14D extends Fragment
 			
 			TextView textView_humidity = new TextView(ROOT);
 			textView_humidity.setId(View.generateViewId());
-			textView_humidity.setText(String.valueOf(weather.getHumidity_14D()[i]));
+			textView_humidity.setText(MyTools.Convert_Humidity(weather.getHumidity_14D()[i]));
 			constraintLayout.addView(textView_humidity);
 			textView_humidity.setLayoutParams(Text_Params[2]);
 			textView_humidity.setGravity(Gravity.CENTER);
@@ -192,7 +199,7 @@ public class Fraq_14D extends Fragment
 								  constraintLayout.getId(), ConstraintSet.TOP);
 			constraintSet.connect(textView_date.getId(), ConstraintSet.END,
 								  textView_day.getId(), ConstraintSet.END,
-								  (int) (MyTools.get_Screen_Width(ROOT)*0.03));
+								  (int) (MyTools.get_Screen_Width(ROOT)*0.01));
 			constraintSet.setVerticalBias(textView_date.getId(),(float) 0.6);
 			
 			constraintSet.connect(imageView_weather[0].getId(), ConstraintSet.START,
