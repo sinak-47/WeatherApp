@@ -45,7 +45,7 @@ public class Fraq_24H extends Fragment
 				(int) (MyTools.get_Screen_Height(ROOT) * 0.185));
 		
 		Text_Params[0] = new ConstraintLayout.LayoutParams(
-				(int) (MyTools.get_Screen_Width(ROOT)*0.15),
+				(int) (MyTools.get_Screen_Width(ROOT)*0.2),
 				ConstraintLayout.LayoutParams.MATCH_PARENT);
 		
 		Text_Params[1] = new ConstraintLayout.LayoutParams(
@@ -53,7 +53,7 @@ public class Fraq_24H extends Fragment
 				ConstraintLayout.LayoutParams.MATCH_PARENT);
 		
 		Text_Params[2] = new ConstraintLayout.LayoutParams(
-				(int) (MyTools.get_Screen_Width(ROOT)*0.08),
+				(int) (MyTools.get_Screen_Width(ROOT)*0.1),
 				ConstraintLayout.LayoutParams.MATCH_PARENT);
 		
 		Linear_Params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,

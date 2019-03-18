@@ -92,7 +92,7 @@ public class Weather
 		}
 		
 		
-		for (int i = 1; i < 3; i++)
+		for (int i = 1; i < 4; i++)
 		{
 			time[i] = (short) (time[i - 1] + 1);
 			if (time[i] == 4)

@@ -54,7 +54,7 @@ public class Fraq_Hourly extends Fragment
 				ConstraintLayout.LayoutParams.MATCH_PARENT);
 		
 		Text_Params[2] = new ConstraintLayout.LayoutParams(
-				(int) (MyTools.get_Screen_Width(ROOT)*0.08),
+				(int) (MyTools.get_Screen_Width(ROOT)*0.1),
 				ConstraintLayout.LayoutParams.MATCH_PARENT);
 		
 		

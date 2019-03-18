@@ -46,10 +46,10 @@ public class Fraq_14D extends Fragment
 				(int) (MyTools.get_Screen_Height(ROOT) * 0.15));
 		
 		Text_Params[0] = new ConstraintLayout.LayoutParams(
-				(int) (MyTools.get_Screen_Width(ROOT)*0.15),
+				(int) (MyTools.get_Screen_Width(ROOT)*0.2),
 				ConstraintLayout.LayoutParams.WRAP_CONTENT);
 		Text_Params[4] = new ConstraintLayout.LayoutParams(
-				(int) (MyTools.get_Screen_Width(ROOT)*0.15),
+				(int) (MyTools.get_Screen_Width(ROOT)*0.2),
 				ConstraintLayout.LayoutParams.WRAP_CONTENT);
 		Text_Params[3] = new ConstraintLayout.LayoutParams(
 				(int) (MyTools.get_Screen_Width(ROOT)*0.05),
@@ -127,7 +127,7 @@ public class Fraq_14D extends Fragment
 			textView_day.setText(MyTools.get_Day((short) i));
 			constraintLayout.addView(textView_day);
 			textView_day.setLayoutParams(Text_Params[0]);
-			textView_day.setGravity(Gravity.LEFT);
+			textView_day.setGravity(Gravity.CENTER);
 			
 			ImageView imageView_weather[] = new ImageView[2];
 			imageView_weather[0] = new ImageView(ROOT);

@@ -2,6 +2,7 @@ package com.example.snabavi.weatherapp;
 
 import android.app.Activity;
 import android.content.Context;
+import android.support.annotation.DrawableRes;
 import android.util.DisplayMetrics;
 
 import java.text.SimpleDateFormat;
@@ -175,7 +176,8 @@ public final class MyTools
 		}
 	}
 	
-	public static int Convert_State(short state)
+	public static @DrawableRes
+	int Convert_State(short state)
 	{
 		switch (state)
 		{
